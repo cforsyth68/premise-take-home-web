@@ -4,11 +4,12 @@ import {
   Route
 } from "react-router-dom";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { createTheme, ThemeProvider } from "@material-ui/core";
+import { Container, createTheme, ThemeProvider, Typography } from "@material-ui/core";
 import defaultTheme from "./themes/default";
 import Home from "./pages/Home"
 import Characters from "./pages/Characters";
-import Masthead from "./components/Masthead";
+//import Masthead from "./components/Masthead";
+import MenuAppBar from "./components/AppBar";
 
 const theme = createTheme(defaultTheme);
 
@@ -17,16 +18,18 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <CssBaseline />
-        <Masthead />
+        <MenuAppBar />
         <ThemeProvider theme={theme}>
-          <Switch>
-            <Route path="/characters">
-              <Characters />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Container maxWidth="xl">
+            <Switch>
+              <Route path="/characters">
+                <Characters />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Container>
         </ThemeProvider>
       </div>
     </BrowserRouter>
