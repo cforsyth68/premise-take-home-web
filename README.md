@@ -1,4 +1,4 @@
-# premise-take-home-ui
+# Premise Take-Home Web
 
 This is the User Interface React application used to search the Breaking Bad API.
 
