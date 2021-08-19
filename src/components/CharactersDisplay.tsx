@@ -1,4 +1,4 @@
-import useCharacterSearchApi from "../hooks/useBreakingBadApi";
+import useCharacterSearchApi from "../hooks/useLocalProxyApi";
 
 
 const CharactersDisplay = ({ term }: { term: string }) => {
