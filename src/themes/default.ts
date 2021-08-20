@@ -4,14 +4,14 @@ const defaultTheme: ThemeOptions = {
   palette: {
     type: "light",
     primary: {
-      main: "#192a51ff",
+      main: "#93654B",
     },
     secondary: {
-      main: "#967aa1ff",
+      main: "#DCCAB2",
     },
     background: {
-      default: "#FFE8D6",
-      paper: "#f5e6e8ff",
+      default: "#f5e6e8",
+      paper: "#FFE8D6",
     },
     success: {
       main: "#6AB966",

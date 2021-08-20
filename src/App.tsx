@@ -8,7 +8,7 @@ import { Container, createTheme, ThemeProvider } from "@material-ui/core";
 import defaultTheme from "./themes/default";
 import Home from "./pages/Home"
 import Characters from "./pages/Characters";
-import MenuAppBar from "./components/Masthead";
+import Masthead from "./components/Masthead";
 
 const theme = createTheme(defaultTheme);
 
@@ -17,9 +17,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <CssBaseline />
-        <MenuAppBar />
+        <Masthead />
         <ThemeProvider theme={theme}>
-          <Container maxWidth="xl">
+          <Container fixed={true} maxWidth={false}>
             <Switch>
               <Route path="/characters">
                 <Characters />

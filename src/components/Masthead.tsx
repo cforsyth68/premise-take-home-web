@@ -17,6 +17,9 @@ const useStyles = makeStyles(() => ({
   title: {
     flexGrow: 1,
   },
+  appBar: {
+    background: "#543C30",
+  }
 }));
 
 
@@ -39,8 +42,8 @@ const Masthead = (props: RouteComponentProps) => {
   return (
     <div className={classes.root}>
       <ElevationScroll {...props}>
-        <AppBar position="static">
-          <Toolbar>
+        <AppBar position="static" variant="elevation" className={classes.appBar}>
+          <Toolbar variant="dense">
             <Typography variant="h6" className={classes.title}>
               Charles Forsyth's Take Home Interview Challenge
             </Typography>
