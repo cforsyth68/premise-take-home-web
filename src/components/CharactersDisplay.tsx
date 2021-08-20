@@ -2,6 +2,7 @@ import Box from "@material-ui/core/Box";
 import Fade from "@material-ui/core/Fade";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import useCharacterSearchApi from "../hooks/useLocalProxyApi";
+import ApiError from "./ApiError";
 import CharacterCard from "./CharacterCard";
 
 const CharactersDisplay = ({ term }: { term: string }) => {
@@ -24,7 +25,7 @@ const CharactersDisplay = ({ term }: { term: string }) => {
         </p>
       )
       }
-      {error && <p>Error: {error}</p>}
+      {error && <ApiError error={error} />}
       <Box
         display="flex"
         flexDirection="row"

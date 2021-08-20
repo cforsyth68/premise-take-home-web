@@ -26,7 +26,6 @@ const useCharacterSearchApi = (term: string): CharactersSearchApiReturn => {
         const response = await charactersApiInstance.get(path);
         setdata(response.data);
       } catch (err) {
-        console.log(err);
         setError(err);
       } finally {
         setLoading(false);
