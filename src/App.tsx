@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   BrowserRouter,
   Switch,
@@ -33,6 +34,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-}
+} 
 
 export default App;
